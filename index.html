@@ -1,127 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css" />
     <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/libs/anime-master/lib/anime.min.js"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container-fluid">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Maximilian Dauner</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">API</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">API</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<div class="container-fluid">
-    <div class="typewriter">
+    <div class="container-fluid">
+      <div class="typewriter">
         <h1>Hi, ich bin Max :)</h1>
-    </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/img/DSC05947.jpeg" class="d-block mx-auto vh-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/DSC06120.jpeg" class="d-block mx-auto vh-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/IMG_8628.jpeg" class="d-block mx-auto vh-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      </div>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/DSC05947.jpeg"
+              class="d-block mx-auto vh-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/DSC06120.jpeg"
+              class="d-block mx-auto vh-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/IMG_8628.jpeg"
+              class="d-block mx-auto vh-100"
+              alt="..."
+            />
+          </div>
         </div>
-</div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-
-<div class="container-fluid">
-    <div class="row">
-    <div class="card col-md-5 border-0 shadow-sm">
+    <div class="container-fluid">
+      <div class="card col-md-5 border-0 shadow-sm">
         <div class="card-header text-center">
-            <h4 class="m-0">Meine Hobbys</h4>
+          <h4 class="m-0">Meine Hobbys</h4>
         </div>
         <div class="card-body">
-            <h5 class="card-title mb-4">Im Speziellen interessiere ich mich für:</h5>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex align-items-center">
-                    <i class="bi bi-camera-fill  me-2"></i>
-                    Drohnenvideographie
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <i class="bi bi-house-door-fill  me-2"></i>
-                    Smart Home
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <i class="bi bi-bicycle  me-2"></i>
-                    Fahrradfahren
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <i class="bi bi-cpu-fill  me-2"></i>
-                    Neueste Technik
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                    <i class="bi bi-house-door  me-2"></i>
-                    Bouldern
-                </li>
-            </ul>
+          <h5 class="card-title mb-4">
+            Im Speziellen interessiere ich mich für:
+          </h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-camera-fill me-2"></i>
+              Drohnenvideographie
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-house-door-fill me-2"></i>
+              Smart Home
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-bicycle me-2"></i>
+              Fahrradfahren
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-cpu-fill me-2"></i>
+              Neueste Technik
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-house-door me-2"></i>
+              Bouldern
+            </li>
+          </ul>
         </div>
-    </div>
-        <div class="card col-md-5 border-0 shadow-sm">
-            <div class="card-header text-center">
-                <h4 class="m-0">Meine Lieblingsmusik</h4>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title mb-4">Ich höre am liebsten Drum & Bass wie:</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7lXkhek4aKD6v01Rq8fotO" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </li>
-                    <li class="list-group-item d-flex align-items-start">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6giQSCiUkjiYkMsCXZ3ZAy" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </li>
-                    <li class="list-group-item d-flex align-items-start">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47n4ZoeL9tQK8GSgzawaWy" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </li>
-                    <li class="list-group-item d-flex align-items-start">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7BpzgSpHxuj06CrK9jPAwy" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </li>
-                </ul>
-            </div>
+      </div>
+      <div class="card col-md-5 border-0 shadow-sm">
+        <div class="card-header text-center">
+          <h4 class="m-0">Meine Lieblingsmusik</h4>
         </div>
+        <div class="card-body">
+          <h5 class="card-title mb-4">Ich höre am liebsten Drum & Bass wie:</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/7lXkhek4aKD6v01Rq8fotO"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </li>
+            <li class="list-group-item d-flex align-items-start">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/6giQSCiUkjiYkMsCXZ3ZAy"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </li>
+            <li class="list-group-item d-flex align-items-start">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/47n4ZoeL9tQK8GSgzawaWy"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </li>
+            <li class="list-group-item d-flex align-items-start">
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/7BpzgSpHxuj06CrK9jPAwy"
+                width="100%"
+                height="80"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
 
-
-<footer class="footer mt-auto py-3 bg-light">
-    <div class="container text-center">
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
         <span>&copy; 2023 Maximilian Dauner</span>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
