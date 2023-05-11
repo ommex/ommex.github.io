@@ -46,7 +46,7 @@ html body {
 .container-fluid .typewriter {
   background-color: #000;
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;

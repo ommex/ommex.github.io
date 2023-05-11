@@ -19,7 +19,7 @@
     <script src="assets/libs/anime-master/lib/anime.min.js"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Maximilian Dauner</a>
@@ -40,7 +40,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="link.html">API</a>
             </li>
           </ul>
         </div>
@@ -135,60 +135,72 @@
       </div>
       <div class="card col-md-5 border-0 shadow-sm">
         <div class="card-header text-center">
-          <h4 class="m-0">Meine Lieblingsmusik</h4>
+          <h4 class="m-0">IT-Projekte</h4>
         </div>
         <div class="card-body">
-          <h5 class="card-title mb-4">Ich höre am liebsten Drum & Bass wie:</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/7lXkhek4aKD6v01Rq8fotO"
-                width="100%"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </li>
-            <li class="list-group-item d-flex align-items-start">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/6giQSCiUkjiYkMsCXZ3ZAy"
-                width="100%"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </li>
-            <li class="list-group-item d-flex align-items-start">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/47n4ZoeL9tQK8GSgzawaWy"
-                width="100%"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </li>
-            <li class="list-group-item d-flex align-items-start">
-              <iframe
-                style="border-radius: 12px"
-                src="https://open.spotify.com/embed/track/7BpzgSpHxuj06CrK9jPAwy"
-                width="100%"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-            </li>
-          </ul>
+          <div class="project-category">
+            <h5 class="card-title">SmartHome-Lieblingsprojekte:</h5>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="bi bi-clock"></i> Automatische Türöffnung via QR Codes
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-camera"></i> Webcam mit Email-Server
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-house"></i> Redundantes SmartHome und UseCases
+              </li>
+            </ul>
+          </div>
+          <div class="project-category">
+            <h5 class="card-title mt-4">Cloud-Lieblingsprojekte:</h5>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="bi bi-cloud-arrow-up"></i> FTP-Fileserver und
+                automatisierter Dateitransfer
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person"></i> Analyse des menschlichen
+                Erscheinungsbilds
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-globe"></i> Hosting diverser Websiteprojekte
+              </li>
+            </ul>
+          </div>
+          <div class="project-category">
+            <h5 class="card-title mt-4">KI-Lieblingsprojekte:</h5>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="bi bi-gamepad"></i> 4-Gewinnt Agent mit Reinforcement
+                Learning
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-person"></i> Analyse des menschlichen
+                Erscheinungsbilds
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-traffic-cone"></i> Traffic Sing Detection und
+                RCNN
+              </li>
+            </ul>
+          </div>
+          <div class="project-category">
+            <h5 class="card-title mt-4">IT-Security:</h5>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="bi bi-lock"></i> Finden eines Konzeptes zur
+                Passwortspeicherung
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-key"></i> Multifaktorauthentifizierung mittels
+                YubiKey
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-shield"></i> SmartHome Security
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
