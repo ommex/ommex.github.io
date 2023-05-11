@@ -1,5 +1,4 @@
 html body {
-  padding-top: 66px;
   background: rgba(172, 182, 229, 0.45); /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45)); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -7,9 +6,10 @@ html body {
 }
 
 .navbar {
+  margin-bottom: 15px;
   background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ACB6E5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar .navbar-brand {
   color: #000;
@@ -26,8 +26,8 @@ html body {
 
 .footer {
   background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ACB6E5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: #000;
 }
@@ -50,7 +50,7 @@ html body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #0F0;
+  color: #0f0;
   font-size: 24px;
   font-family: monospace;
   text-align: left;
@@ -58,7 +58,7 @@ html body {
 }
 .container-fluid .typewriter h1 {
   overflow: hidden;
-  border-right: 0.15em solid #0F0;
+  border-right: 0.15em solid #0f0;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -82,7 +82,7 @@ html body {
     border-color: transparent;
   }
   50% {
-    border-color: #0F0;
+    border-color: #0f0;
   }
 }
 
