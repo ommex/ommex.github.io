@@ -46,7 +46,7 @@ html body {
 .container-fluid .typewriter {
   background-color: #000;
   position: absolute;
-  top: 85%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -83,6 +83,23 @@ html body {
   50% {
     border-color: #0f0;
   }
+}
+#scrollButton {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  cursor: pointer;
+  z-index: 12;
+  background-color: rgba(172, 182, 229, 0.45);
+  border: none;
+  border-radius: 100%;
+}
+
+#scrollButton i {
+  color: #fff;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

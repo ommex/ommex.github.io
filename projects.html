@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head lang="de">
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script src="assets/libs/JQuery/jquery-3.6.4.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/anime-master/lib/anime.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Maximilian Dauner</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="projects.html"
+                >Projekte</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lebenslauf.html">Lebenslauf</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header text-center">
+              <h4 class="m-0">IT-Projekte</h4>
+            </div>
+            <div class="card-body">
+              <div class="project-category">
+                <h5 class="card-title">SmartHome-Lieblingsprojekte:</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <i class="bi bi-clock"></i> Automatische Türöffnung via QR
+                    Codes
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-camera"></i> Webcam mit Email-Server
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-house"></i> Redundantes SmartHome und
+                    UseCases
+                  </li>
+                </ul>
+              </div>
+              <div class="project-category">
+                <h5 class="card-title mt-4">Cloud-Lieblingsprojekte:</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <i class="bi bi-cloud-arrow-up"></i> FTP-Fileserver und
+                    automatisierter Dateitransfer
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-person"></i> Analyse des menschlichen
+                    Erscheinungsbilds
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-globe"></i> Hosting diverser Websiteprojekte
+                  </li>
+                </ul>
+              </div>
+              <div class="project-category">
+                <h5 class="card-title mt-4">KI-Lieblingsprojekte:</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <i class="bi bi-gamepad"></i> 4-Gewinnt Agent mit
+                    Reinforcement Learning
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-person"></i> Analyse des menschlichen
+                    Erscheinungsbilds
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-traffic-cone"></i> Traffic Sing Detection
+                    und RCNN
+                  </li>
+                </ul>
+              </div>
+              <div class="project-category">
+                <h5 class="card-title mt-4">IT-Security:</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <i class="bi bi-lock"></i> Finden eines Konzeptes zur
+                    Passwortspeicherung
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-key"></i> Multifaktorauthentifizierung
+                    mittels YubiKey
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-shield"></i> SmartHome Security
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid"></div>
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+        <span>&copy; 2023 Maximilian Dauner</span>
+      </div>
+    </footer>
+  </body>
+</html>
