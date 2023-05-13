@@ -75,25 +75,43 @@ html body {
       object-fit: cover;
     }
   }
-
-  .typewriter {
-    background-color: #000;
-    position: absolute;
-    top: 25%;
+  .carousel-floating-items {
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    color: #0f0;
-    font-family: monospace;
-    text-align: left;
-    padding: 1rem; // Abstand zwischen dem Text und dem Hintergrund
-    h1 {
-      overflow: hidden;
-      border-right: 0.15em solid #0f0;
-      white-space: nowrap;
-      margin: 0 auto;
-      letter-spacing: 0.15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    position: absolute;
+    z-index: 4;
+
+    #scrollButton {
+      width: 3.5em;
+      height: 3.5em;
+      cursor: pointer;
+      background-color: rgba(172, 182, 229, 0.45);
+      border: none;
+      border-radius: 100%;
+    }
+
+    #scrollButton i {
+      color: #fff;
+      font-size: 2em;
+    }
+
+    .typewriter {
+      background-color: #000;
+      transform: translate(-50%, -50%);
+      color: #0f0;
+      font-family: monospace;
+      text-align: left;
+      padding: 1rem; // Abstand zwischen dem Text und dem Hintergrund
+      h1 {
+        font-size: 1.8em;
+        overflow: hidden;
+        border-right: 0.15em solid #0f0;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
     }
   }
 }
@@ -119,22 +137,4 @@ html body {
   50% {
     border-color: #0f0;
   }
-}
-
-#scrollButton {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  width: 3.5em;
-  height: 3.5em;
-  cursor: pointer;
-  z-index: 12;
-  background-color: rgba(172, 182, 229, 0.45);
-  border: none;
-  border-radius: 100%;
-}
-
-#scrollButton i {
-  color: #fff;
-  font-size: 2em;
 }
