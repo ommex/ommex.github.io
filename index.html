@@ -51,14 +51,18 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="carousel-floating-items">
+      <div
+        class="carousel-floating-items position-absolute bottom-0 start-50 translate-middle-x"
+      >
         <div class="typewriter">
-          <h1>Hi, ich bin Max :)</h1>
+          <h3>Hi, ich bin Max :)</h3>
         </div>
 
-        <button id="scrollButton" onclick="scrollDown()">
-          <i class="bi bi-chevron-down" style="color: black"></i>
-        </button>
+        <div class="d-flex align-items-center justify-content-center">
+          <button id="scrollButton" onclick="scrollDown()">
+            <i class="bi bi-chevron-down" style="color: black"></i>
+          </button>
+        </div>
       </div>
 
       <div
@@ -212,7 +216,7 @@
     </div>
 
     <footer class="footer mt-auto py-3 bg-light">
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <span>&copy; 2023 Maximilian Dauner</span>
       </div>
     </footer>

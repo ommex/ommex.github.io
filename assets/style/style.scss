@@ -68,6 +68,7 @@ html body {
 
   .carousel-inner {
     height: 100%;
+    padding: 0;
 
     img {
       height: 100%;
@@ -76,12 +77,10 @@ html body {
     }
   }
   .carousel-floating-items {
-    top: 80%;
-    left: 50%;
-    position: absolute;
     z-index: 4;
-
+    margin-bottom: 1.5em;
     #scrollButton {
+      margin-top: 0.5em;
       width: 3.5em;
       height: 3.5em;
       cursor: pointer;
@@ -97,17 +96,17 @@ html body {
 
     .typewriter {
       background-color: #000;
-      transform: translate(-50%, -50%);
       color: #0f0;
       font-family: monospace;
       text-align: left;
       padding: 1rem; // Abstand zwischen dem Text und dem Hintergrund
-      h1 {
-        font-size: 1.8em;
+      margin: 0;
+      h3 {
+        font-size: 1.3em;
         overflow: hidden;
         border-right: 0.15em solid #0f0;
         white-space: nowrap;
-        margin: 0 auto;
+        margin: 0;
         letter-spacing: 0.15em;
         animation: typing 3.5s steps(40, end),
           blink-caret 0.75s step-end infinite;

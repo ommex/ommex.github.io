@@ -37,6 +37,7 @@ html body {
 }
 .container-fluid .carousel-inner {
   height: 100%;
+  padding: 0;
 }
 .container-fluid .carousel-inner img {
   height: 100%;
@@ -44,12 +45,11 @@ html body {
   object-fit: cover;
 }
 .container-fluid .carousel-floating-items {
-  top: 80%;
-  left: 50%;
-  position: absolute;
   z-index: 4;
+  margin-bottom: 1.5em;
 }
 .container-fluid .carousel-floating-items #scrollButton {
+  margin-top: 0.5em;
   width: 3.5em;
   height: 3.5em;
   cursor: pointer;
@@ -63,18 +63,18 @@ html body {
 }
 .container-fluid .carousel-floating-items .typewriter {
   background-color: #000;
-  transform: translate(-50%, -50%);
   color: #0f0;
   font-family: monospace;
   text-align: left;
   padding: 1rem;
+  margin: 0;
 }
-.container-fluid .carousel-floating-items .typewriter h1 {
-  font-size: 1.8em;
+.container-fluid .carousel-floating-items .typewriter h3 {
+  font-size: 1.3em;
   overflow: hidden;
   border-right: 0.15em solid #0f0;
   white-space: nowrap;
-  margin: 0 auto;
+  margin: 0;
   letter-spacing: 0.15em;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
