@@ -1,9 +1,7 @@
 $.ajax({
   url: "http://localhost:3000/api/filme",
   type: "GET",
-  success: function (response) {
-    // Backend ist erreichbar
-  },
+  success: function (response) {},
   error: function (xhr, status, error) {
     $("#db-api").empty();
     $("#db-api").append(
@@ -16,20 +14,17 @@ $.ajax({
 
 $(document).ready(function () {
   $("#db-add-form").submit(function (event) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Formulars
+    event.preventDefault();
 
-    // AJAX-Anfrage zum Senden der Formulardaten
     $.ajax({
-      url: "http://localhost:3000/api/filme", // Die URL der Server-Seite, die die Daten empfängt
-      type: "POST", // Die HTTP-Methode zum Senden der Daten
-      data: $("#db-add-form").serialize(), // Die serialisierten Formulardaten
+      url: "http://localhost:3000/api/filme",
+      type: "POST",
+      data: $("#db-add-form").serialize(),
       success: function (response) {
-        // Erfolgreiche Antwort verarbeiten
         console.log(response);
         location.reload();
       },
       error: function (xhr, status, error) {
-        // Fehlerbehandlung
         console.error(error);
       },
     });
@@ -38,10 +33,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $.get("http://localhost:3000/api/filme?orderby=titel", function (data) {
-    // Daten verarbeiten und Tabelle generieren
     var tableData = data.data;
 
-    // Tabellenkopf erstellen
     var tableHead =
       "<thead>" +
       "<tr>" +
@@ -53,18 +46,17 @@ $(document).ready(function () {
       '<th scope="col">Ausstrahldatum</th>' +
       '<th scope="col">Erstellt</th>' +
       '<th scope="col">Aktualisiert</th>' +
-      '<th scope="col">Aktionen</th>' + // Neue Spalte für Aktionen
+      '<th scope="col">Aktionen</th>' +
       "</tr>" +
       "</thead>";
 
-    // Tabelleninhalt erstellen
     var tableBody = "<tbody>";
     for (var i = 0; i < tableData.length; i++) {
       var rowData = tableData[i];
       var deleteButton =
         '<button class="btn btn-danger btn-sm delete-btn" data-id="' +
         rowData.id +
-        '"><i class="bi bi-trash me-1"></i>Löschen</button>'; // Löschbutton mit Daten-ID
+        '"><i class="bi bi-trash me-1"></i>Löschen</button>';
       tableBody +=
         "<tr>" +
         '<th scope="row">' +
@@ -93,22 +85,19 @@ $(document).ready(function () {
         "</td>" +
         "<td>" +
         deleteButton +
-        "</td>" + // Spalte für den Löschbutton
+        "</td>" +
         "</tr>";
     }
     tableBody += "</tbody>";
 
-    // Tabelle erstellen
     var table =
       '<table class="table table-striped">' +
       tableHead +
       tableBody +
       "</table>";
 
-    // Tabelle in die HTML-Div einfügen
     $(".data").html(table);
 
-    // DELETE-Request senden
     $(".delete-btn").click(function () {
       var id = $(this).data("id");
       $.ajax({

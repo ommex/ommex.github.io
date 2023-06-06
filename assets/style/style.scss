@@ -1,65 +1,50 @@
 html body {
-  background: rgba(172, 182, 229, 0.45); /* fallback for old browsers */
+  background: rgba(172, 182, 229, 0.45);
   background: -webkit-linear-gradient(
     to right,
     rgba(172, 182, 229, 0.45),
     rgba(116, 235, 213, 0.45)
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     rgba(172, 182, 229, 0.45),
     rgba(116, 235, 213, 0.45)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
   font-family: "Montserrat", sans-serif;
 }
 
-// Navbar-Stil
 .navbar {
   margin-bottom: 15px;
-  background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #acb6e5,
-    #74ebd5
-  ) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #acb6e5,
-    #74ebd5
-  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5 !important;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important;
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important;
+
   .navbar-brand {
-    color: #000; // Textfarbe des Markenlogos
+    color: #000;
+
     &:hover {
-      color: #555; // Textfarbe des Markenlogos bei Hover
+      color: #555;
     }
   }
 
   .navbar-nav {
     .nav-link {
-      color: #000; // Textfarbe des Links
+      color: #000;
+
       &:hover {
-        color: #555; // Textfarbe des Links bei Hover
+        color: #555;
       }
     }
   }
 }
 
-// Footer-Stil
 .footer {
-  background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #acb6e5,
-    #74ebd5
-  ) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #acb6e5,
-    #74ebd5
-  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5 !important;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important;
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.1); // Schwarzer 1-Pixel-Strich am oberen Rand
-  color: #000; // Textfarbe
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
 }
 
 .container-fluid {
@@ -102,7 +87,7 @@ html body {
       color: #0f0;
       font-family: monospace;
       text-align: left;
-      padding: 1rem; // Abstand zwischen dem Text und dem Hintergrund
+      padding: 1rem;
       margin: 0;
 
       h3 {

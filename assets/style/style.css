@@ -1,15 +1,15 @@
 html body {
-  background: rgba(172, 182, 229, 0.45); /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45)); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgba(172, 182, 229, 0.45);
+  background: -webkit-linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45));
+  background: linear-gradient(to right, rgba(172, 182, 229, 0.45), rgba(116, 235, 213, 0.45));
   font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
   margin-bottom: 15px;
-  background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #acb6e5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5 !important;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important;
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important;
 }
 .navbar .navbar-brand {
   color: #000;
@@ -25,9 +25,9 @@ html body {
 }
 
 .footer {
-  background: #74ebd5 !important; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important; /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #acb6e5, #74ebd5) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #74ebd5 !important;
+  background: -webkit-linear-gradient(to right, #acb6e5, #74ebd5) !important;
+  background: linear-gradient(to right, #acb6e5, #74ebd5) !important;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: #000;
 }
